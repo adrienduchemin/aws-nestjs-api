@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  aws-nestjs-api:
+    image: 'node'
+    working_dir: /app
+    user: node
+    volumes:
+      - '.:/app'
+    environment:
+      # NODE
+      - NODE_ENV=development
+      # API
+      - PORT=3000
+    ports:
+      - '3002:3000'
+    command: npm run start:dev
+
+networks:
+  default:
+    external:
+      name: aws_nestjs_network
