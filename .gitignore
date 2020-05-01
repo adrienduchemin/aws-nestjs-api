@@ -139,3 +139,19 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+############### CDK TO CLEAR LATER ###############
+
+*.js
+!jest.config.js
+*.d.ts
+deployment/node_modules
+
+# CDK asset staging directory
+deployment/.cdk.staging
+deployment/cdk.out
+
+# Parcel build directories
+deployment/.cache
+deployment/.build
+deployment/dist
