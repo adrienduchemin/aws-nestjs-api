@@ -1,6 +1,6 @@
 import { expect as expectCDK, haveResource } from '@aws-cdk/assert'
 import * as cdk from '@aws-cdk/core'
-import * as Deployment from '../src/lib/deployment-stack'
+import * as Deployment from '../src/lib/lambda-with-gateway.stack'
 
 test('SQS Queue Created', () => {
     const app = new cdk.App()
