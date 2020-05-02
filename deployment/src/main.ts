@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { join } from 'path'
 import { App } from '@aws-cdk/core'
 
