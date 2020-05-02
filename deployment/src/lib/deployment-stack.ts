@@ -20,9 +20,10 @@ export class DeploymentStack extends Stack {
       timeout,
     })
 
-    console.log('Lambda ARN', { arn: lambda.functionArn })
-    // link lambda to a generic sqs
-    // push the log into the generic sqs
-    // ce generic sqs implement le sqs with log du tuto youtube
+    console.log('lambda', { lambda: lambda.functionArn })
+    
+
+    // should create a RDS and link the lambda as write access to it
+    // creer un autre repo de deploiement + lambda avec le SQS qui a le droit de publier dans un dynamo (tuto youtube)
   }
 }
