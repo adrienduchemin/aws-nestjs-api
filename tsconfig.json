@@ -8,10 +8,22 @@
     "resolveJsonModule": true,
     "target": "es2017",
     "sourceMap": true,
-    "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
-    "lib": ["es2019"]
+    "lib": ["es2019"],
+    "moduleResolution": "node",
+    "allowJs": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "strictPropertyInitialization":false,
+    "typeRoots": ["./node_modules/@types", "./deployment/node_modules/@types"]
   },
   "exclude": ["node_modules", "dist", "deployment/cdk.out", "deployment/dist", "deployment/node_modules"]
 }

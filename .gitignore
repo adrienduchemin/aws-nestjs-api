@@ -106,6 +106,7 @@ dist
 ############### NESTJS TO CLEAR LATER ###############
 
 # compiled output
+bundle.zip
 /dist
 /node_modules
 

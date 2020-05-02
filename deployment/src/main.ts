@@ -8,4 +8,4 @@ import { DeploymentStack } from './lib/deployment-stack'
 const app = new App()
 // care when changing the name in package json, it wont destroy the previous stack
 // so do it before changing : npm run cdk destroy ${old-name}
-new DeploymentStack(app, `${name}`, { lambdaCodePath: join(__dirname, '../../dist') })
+new DeploymentStack(app, `${name}`, { lambdaCodePath: join(__dirname, '../../bundle.zip') })

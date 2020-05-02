@@ -1,9 +1,6 @@
 {
   "name": "aws-nestjs-api",
   "version": "0.0.1",
-  "bin": {
-    "deployment": "src/maint.ts"
-  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.build.json",
