@@ -16,6 +16,8 @@ export class AppService {
   }
   
   async getHello(): Promise<string> {
+    // should find better than this shit
+    // also, this.sqsService should be mocked if env=dev
     await this.sqs.sendMessage({
         QueueUrl: this.queueUrl,
         MessageBody: JSON.stringify({ text: 'Hello World!' }),
