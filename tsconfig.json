@@ -23,7 +23,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": false,
     "strictPropertyInitialization":false,
-    "typeRoots": ["./node_modules/@types", "./deployment/node_modules/@types"]
   },
-  "exclude": ["node_modules", "dist", "deployment/cdk.out", "deployment/dist", "deployment/node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

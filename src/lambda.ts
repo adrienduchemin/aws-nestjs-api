@@ -28,6 +28,5 @@ async function bootstrapServer(): Promise<Server> {
 export const handler: Handler = async (event: APIGatewayProxyEvent, context: Context) => {
     console.log('Handler called', { event, context, instanceId })
     const server = cachedServer ? cachedServer : await bootstrapServer()
-    // await proxy(server, event, context, 'PROMISE').promise
      return proxy(server, event, context, 'PROMISE').promise
 }
