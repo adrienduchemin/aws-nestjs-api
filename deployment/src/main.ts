@@ -2,7 +2,8 @@ import { join } from 'path'
 import { Code } from '@aws-cdk/aws-lambda'
 import { App } from '@aws-cdk/core'
 
-import { ApiLambdaWithHistoryStack } from '../../../aws-nestjs-generic-deployment/dist/stacks/api-lambda-with-history.stack'
+// to refacto with lerna lib
+import { ApiLambdaWithHistoryStack } from '../../../aws-nestjs-generic-deployment/src/stacks/api-lambda-with-history.stack'
 import { name } from '../package.json'
 
 const app = new App()
