@@ -6,7 +6,7 @@ export class AppService {
   private _sqs?: SQS
 
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  private readonly queueUrl = process.env.QUEUE_URL!
+  private readonly queueUrl = process.env.QUEUE_URL
 
   get sqs(): SQS {
     if (!this._sqs) {
@@ -16,6 +16,9 @@ export class AppService {
   }
   
   async getHello(): Promise<string> {
+    if(!this.queueUrl) {
+      throw new Error('no queue url given')
+  }
     // should find better than this shit
     // also, this.sqsService should be mocked if env=dev
     await this.sqs.sendMessage({

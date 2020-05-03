@@ -35,6 +35,12 @@ An awesome API in NestJS as a Lambda with an API Gateway
 
 ```bash
 $ npm install
+
+# build
+$ npm run build
+
+# lint
+$ npm run lint
 ```
 
 ## Running the app
@@ -55,6 +61,15 @@ $ npm run start:prod
 ```bash
 # unit tests
 $ npm run test
+
+# unit tests in update mode
+$ npm run test:update
+
+# unit tests in watch mode
+$ npm run test:watch
+
+# unit tests in debug mode
+$ npm run test:debug
 
 # e2e tests
 $ npm run test:e2e
