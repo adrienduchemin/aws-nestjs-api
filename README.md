@@ -56,6 +56,25 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Deploying the app
+
+```bash
+# install the bootstrap stack into an environment
+$ npm run cdk:bootstrap
+
+# emits the synthesized CloudFormation template
+$ npm run cdk:synth
+
+# compare deployed stack with current state
+$ npm run cdk:diff
+
+# deploy the stack
+$ npm run cdk:deploy
+
+# destroy the stack
+$ npm run cdk:destroy
+```
+
 ## Test
 
 ```bash

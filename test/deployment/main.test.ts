@@ -1,5 +1,5 @@
 import { CloudAssembly } from '@aws-cdk/cx-api'
-import app from '../src/main'
+import app from '../../deployment/main'
 
 describe('Main', () => {
   let synth: CloudAssembly

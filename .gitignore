@@ -146,13 +146,10 @@ lerna-debug.log*
 *.js
 !jest.config.js
 *.d.ts
-deployment/node_modules
 
 # CDK asset staging directory
-deployment/.cdk.staging
-deployment/cdk.out
+.cdk.staging
+cdk.out
 
 # Parcel build directories
-deployment/.cache
-deployment/.build
-deployment/dist
+.cache

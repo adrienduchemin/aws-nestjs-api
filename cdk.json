@@ -1,5 +1,5 @@
 {
-  "app": "node dist/main.js",
+  "app": "node dist/deployment/main.js",
   "context": {
     "@aws-cdk/core:enableStackNameDuplicates": "true",
     "aws-cdk:enableDiffNoFail": "true"
