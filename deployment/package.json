@@ -1,0 +1,57 @@
+{
+  "name": "aws-nestjs-api",
+  "version": "0.0.1",
+  "scripts": {
+    "cdk": "cdk",
+    "cdk:bootstrap": "cdk bootstrap",
+    "cdk:synth": "cdk synth",
+    "cdk:diff": "cdk diff",
+    "cdk:deploy": "cdk deploy",
+    "cdk:destroy": "cdk destroy",
+    "prebuild": "rimraf dist",
+    "build": "tsc -p tsconfig.build.json",
+    "watch": "tsc -w -p tsconfig.build.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:update": "jest --updateSnapshot",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.36.1",
+    "@types/aws-lambda": "8.10.51",
+    "@types/jest": "25.2.1",
+    "@types/node": "10.17.5",
+    "@typescript-eslint/eslint-plugin": "2.30.0",
+    "@typescript-eslint/parser": "2.30.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.20.2",
+    "jest": "25.5.4",
+    "rimraf": "3.0.2",
+    "ts-jest": "25.3.1",
+    "ts-node": "8.9.1",
+    "tsconfig-paths": "3.9.0",
+    "typescript": "3.7.2"
+  },
+  "dependencies": {
+    "aws-cdk": "1.36.1",
+    "@aws-cdk/aws-lambda": "1.36.1",
+    "@aws-cdk/core": "1.36.1",
+    "@aws-cdk/cx-api": "1.36.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "test",
+    "testRegex": ".test.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
